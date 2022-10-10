@@ -1,10 +1,4 @@
-@media only screen and (min-width: 600px) {
-  h1 {
-    font-size: 22px;
-    letter-spacing: 0.5px;
-  }
-}
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   header {
     max-width: 600px;
     width: 100%;
@@ -192,6 +186,12 @@ input {
       justify-content: space-around;
 }
 
+@media screen and (max-width: 600px) {
+  .nav-bar {
+    max-height: 200px;
+    height: 100%;
+  }
+}
 h3 {
   font-family: "Josefin Sans";
   font-style: normal;
@@ -233,6 +233,11 @@ li {
   margin: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .menu {
+    list-style-type: circle;
+  }
+}
 @media screen and (max-width: 600px) {
   .info-group {
     display: -webkit-box;
