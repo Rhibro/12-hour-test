@@ -7,6 +7,7 @@
 @media only screen and (max-width: 800px) {
   header {
     max-width: 600px;
+    width: 100%;
   }
 }
 body {
@@ -24,7 +25,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: auto;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 button:hover {
@@ -58,7 +59,7 @@ h1 {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 10vw;
   line-height: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,24 +91,19 @@ h2 {
   color: #FFFFFF;
 }
 
-.serach-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: inline;
-          flex-direction: inline;
-  margin: 20px;
+.search-bar {
+  display: inline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 input {
-  max-width: 700px;
+  /*max-width: 700px;
   width: 100%;
-  height: 63px;
+  height: 63px;*/
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 400;
@@ -126,6 +122,12 @@ input {
   border: 1px solid white;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+}
+
+.search {
+  max-width: 700px;
+  width: 100%;
+  height: 63px;
 }
 
 .btn-1 {
@@ -224,12 +226,44 @@ ul {
           align-items: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  overflow: auto;
 }
 
 li {
   margin: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .info-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .p-2 {
+    max-width: 600px;
+    width: 100%;
+    height: 100px;
+    margin: 20px;
+  }
+
+  .p-3 {
+    max-width: 600px;
+    width: 100%;
+    height: 100px;
+    margin: 20px;
+  }
+}
 .sec-1 {
   background-image: url(../images\ /image-2.png);
   background-repeat: no-repeat;
@@ -240,12 +274,15 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 20px;
 }
 
 h4 {
@@ -331,8 +368,17 @@ h4 {
           transition-duration: 1s;
 }
 
+@media screen and (max-width: 800px) {
+  .display-img-2 {
+    display: none;
+  }
+}
 @media screen and (max-width: 600px) {
-  .img-container-1 {
+  .display-img-1 {
+    display: none;
+  }
+
+  .display-img-2 {
     display: none;
   }
 }
@@ -758,6 +804,20 @@ h4 {
           align-items: flex-end;
 }
 
+@media screen and (max-width: 800px) {
+  .sec-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 600px;
+  }
+}
 .box-1 {
   max-width: 543px;
   width: 100%;
@@ -859,7 +919,7 @@ h4 {
   max-width: 1770px;
   width: 100%;
   height: 700px;
-  background-image: url(../images\ /image-5.png);
+  background-image: url(../images\ /image-6.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -873,6 +933,19 @@ h4 {
           align-items: flex-end;
 }
 
+@media screen and (max-width: 800px) {
+  .sec-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .box-2 {
   max-width: 543px;
   width: 100%;
@@ -1048,6 +1121,11 @@ h5 {
   margin: 20px;
 }
 
+@media only screen and (max-width: 800px) {
+  .fa-quote-left {
+    display: none;
+  }
+}
 .fa-quote-left {
   font-family: "FontAwesome";
   font-style: normal;
@@ -1062,6 +1140,11 @@ h5 {
   color: #5474FD;
 }
 
+@media only screen and (max-width: 600px) {
+  .p-11 {
+    max-width: 300px;
+  }
+}
 .p-11 {
   font-family: "Josefin Sans";
   font-style: normal;
@@ -1081,6 +1164,11 @@ h5 {
   margin: 20px;
 }
 
+@media screen and (max-width: 800px) {
+  .display-img-3 {
+    display: none;
+  }
+}
 .display-img-3 {
   max-width: 445px;
   width: 100%;
