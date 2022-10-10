@@ -46,13 +46,14 @@ header {
         letter-spacing: 6.82px;
         color: #FFFFFF;
     }
-    .serach-bar {
+    /*.serach-bar {
         display:flex;
         align-items: center;
         flex-direction: row;
-    }
+        margin: 20px;
+    }*/
     input {
-        max-width: 500px;
+        max-width: 700px;
         width: 100%;
         height: 63px;
         font-family: 'Josefin Sans';
@@ -100,12 +101,16 @@ header {
         text-align: center;
         letter-spacing: 2.8px;
         color: #FFFFFF;
+        margin: 50px;
     }
 .nav-bar {
     max-width: 1770px;
     width: 100%;
     height: 80px;
     background-color: #5474FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
     h3 {
         font-family: 'Josefin Sans';
@@ -132,18 +137,9 @@ header {
         text-transform: uppercase;
         color: #FFFFFF;
     }
-    /*li {
-        font-family: 'Aleo';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 26px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-    }*/
+    li {
+        margin: 20px;    
+    }
 .sec-1 {
     background-image: url(../images\ /image-2.png);
     background-repeat: no-repeat;
@@ -151,6 +147,11 @@ header {
     max-width: 1770px;
     width: 100%;
     height: 685px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
     h4 {
     font-family: 'Aleo';
@@ -161,6 +162,9 @@ header {
     display: flex;
     align-items: center;
     color: #FFFFFF;
+    max-width: 288px;
+    width: 100%;    
+    height: 56px;
     }
     .p-2 {
         font-family: 'Josefin Sans';
@@ -172,6 +176,9 @@ header {
         align-items: center;
         letter-spacing: 1.6px;
         color: #E8E8E8;
+        max-width: 560px;
+        width: 100%;
+        height: 100px;
     }
     .p-3 {
         font-family: 'Josefin Sans';
@@ -183,6 +190,9 @@ header {
         align-items: center;
         letter-spacing: 1.6px;
         color: #E8E8E8;
+        max-width: 560px;
+        width: 100%;
+        height: 58px;
     }
     .btn-2 {
         max-width: 228px;
@@ -203,16 +213,34 @@ header {
         border: none;
         transition-duration: 1s;
     }
-    .display-img-1 {
-        max-width: 350px;
+    .img-container-1 {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+        padding: 10px;
+        max-width: 400px;
         width: 100%;
-        height: 220px;
+        height: 490px;
     }
-    .display-img-2 {
-        max-width: 350px;
-        width: 100%;
-        height: 220px;
-    }
+        .display-img-1 {
+            max-width: 350px;
+            width: 100%;
+            height: 220px;
+            grid-column-start: 1;
+            grid-column-end: 9;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .display-img-2 {
+            max-width: 350px;
+            width: 100%;
+            height: 220px;
+            grid-column-start: 2;
+            grid-column-end: 10;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
 .sec-2 {
     max-width: 1773px;
     width: 100%;
@@ -226,6 +254,9 @@ header {
     background-image: url(../images\ /image-5.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
     .box-1 {
         max-width: 543px;
@@ -234,6 +265,10 @@ header {
         background: #232323;
         mix-blend-mode: normal;
         opacity: 0.9;
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     .p-4 {
         font-family: 'Josefin Sans';
@@ -245,6 +280,7 @@ header {
         align-items: center;
         letter-spacing: 1.5px;
         color: #E8E8E8;
+        margin: 20px;
     }
     .p-5 {
         font-family: 'Josefin Sans';
@@ -256,6 +292,7 @@ header {
         align-items: center;
         text-transform: uppercase;
         color: #FFFFFF;
+        margin: 20px;
     }
     .p-6 {
         font-family: 'Josefin Sans';
@@ -266,6 +303,7 @@ header {
         display: flex;
         align-items: center;
         color: #E8E8E8;
+        margin: 20px;
     }
     .btn-3 {
         max-width: 228px;
@@ -285,6 +323,7 @@ header {
         background-color: #5474FD;
         border: none;
         transition-duration: 1s;
+        margin: 20px;
     }
 .sec-4 {
     max-width: 1770px;
@@ -293,6 +332,9 @@ header {
     background-image: url(../images\ /image-5.png);        
     background-repeat: no-repeat;
     background-size: cover;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     }
         .box-2 {
             max-width: 543px;
@@ -301,6 +343,10 @@ header {
             background: #232323;
             mix-blend-mode: normal;
             opacity: 0.9;
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
         }
         .p-7 {
             font-family: 'Josefin Sans';
@@ -312,6 +358,7 @@ header {
             align-items: center;
             letter-spacing: 1.5px;
             color: #E8E8E8;
+            margin: 20px;
         }
         .p-8 {
             font-family: 'Josefin Sans';
@@ -323,6 +370,7 @@ header {
             align-items: center;
             text-transform: uppercase;
             color: #FFFFFF;
+            margin: 20px;
         }
         .p-9 {
             font-family: 'Josefin Sans';
@@ -333,6 +381,7 @@ header {
             display: flex;
             align-items: center;
             color: #E8E8E8;
+            margin: 20px;
         }
         .btn-4 {
             max-width: 228px;
@@ -352,6 +401,7 @@ header {
             background-color: #5474FD;
             border: none;
             transition-duration: 1s;
+            margin: 20px;
         }
 .sec-5 {
     max-width: 1770px;
@@ -360,6 +410,10 @@ header {
     background-image: url(../images\ /image-7.png);        
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
     h5 {
     font-family: 'Aleo';
@@ -377,6 +431,7 @@ header {
         width: 100%;
         height: 287px;
         background-color: #333333;
+        display: flex;
     }
     .p-10 {
         font-family: 'Josefin Sans';
@@ -388,6 +443,10 @@ header {
         align-items: center;
         text-transform: uppercase;
         color: #FEFEFE;
+        max-width: 150px;
+        width: 100%;
+        height: 26px;
+        margin: 20px;
     }
     .p-11 {
         font-family: 'Josefin Sans';
@@ -398,6 +457,10 @@ header {
         display: flex;
         align-items: center;
         color: #E8E8E8;
+        max-width: 581px;
+        width: 100%;
+        height: 165px;
+        margin: 20px;
     }
     .display-img-3 {
         max-width: 445px;
