@@ -41,6 +41,24 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.h-crew {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -86,12 +104,27 @@ h2 {
 }
 
 .search-bar {
-  display: inline;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 700px;
+  width: 100%;
+  height: 63px;
+}
+
+input:hover {
+  background-color: #999999;
+  color: #FFFFFF;
 }
 
 input {
@@ -119,7 +152,7 @@ input {
 }
 
 .search {
-  max-width: 700px;
+  max-width: 400px;
   width: 100%;
   height: 63px;
 }
@@ -147,7 +180,7 @@ input {
   border: 1px solid white;
   max-width: 153px;
   width: 100%;
-  height: 63px;
+  height: 68px;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
@@ -303,7 +336,6 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
 }
 
 h4 {
