@@ -318,93 +318,15 @@ header {
             grid-row-start: 2;
             grid-row-end: 3;
         }
-.sec-2 {
-    max-width: 1773px;
+.image-bar {
+    max-width: 1770px;
     width: 100%;
-    height: 340px;
-    background-color: #333333;
-    width: 100%;
-    height: 490px;
-    display: flex;
+    height: 300px;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
-    .grid-box-2 {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-gap: 10px;
-        padding: 10px;
-        max-width: 800px;
-        width: 100%;
-        height: 300px;
-    }
-    .arch {
-        grid-column-start: 1;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        max-width: 700px;
-        width: 100%;
-        height: 95px;
-    }
-    .fa-magnifying-glass {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        color: #5474FD;
-    }
-    .nmb-1 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-    .fa-circle-check {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        color: #FF6363;
 
-    }
-    .nmb-2{
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-    .fa-thumbs-up {
-        grid-column-start: 5;
-        grid-column-end: 6;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        color: #00A2FF;
-    }
-    .nmb-3 {
-        grid-column-start: 5;
-        grid-column-end: 6;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-    @media screen and (max-width: 800px){
-        .text-info {font-size: 5vh;}
-    }
-    .text-info {
-        font-family: 'Aleo';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 25px;
-        line-height: 26px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #E8E8E8;
-        max-width: 244px;
-        width: 100%;
-        height: 26px;
-    }
 .sec-3 {
     max-width: 1770px;
     width: 100%;
