@@ -184,12 +184,13 @@ header {
     .nav-link {
         transition-duration: 1s;
     }
-    .nav-link:hover {
-        border: 1px solid white;
+    .nav-btn {
+        background-color: #5474FD;
+        color:#FFFFFF;
+        border: none;
+        
     }
-
-
-
+    
 .sec-1 {
     background-image: url(../images/image-2.png);
     background-repeat: no-repeat;
@@ -677,6 +678,9 @@ footer {
 
     @media screen and (max-width: 500px){
 
+        h3 {
+            display: none;
+        }
         .p-2 {
             max-width: 450px;
             width: 100%;
