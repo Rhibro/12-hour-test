@@ -203,6 +203,16 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+    .info-group {
+        max-width: 560px;
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
     
 
     h4 {
@@ -217,6 +227,7 @@ header {
     max-width: 288px;
     width: 100%;    
     height: 56px;
+    margin: 20px;
     }
     .p-2 {
         font-family: 'Josefin Sans';
@@ -231,6 +242,7 @@ header {
         max-width: 560px;
         width: 100%;
         height: 100px;
+        margin: 20px;
     }
     .p-3 {
         font-family: 'Josefin Sans';
@@ -245,6 +257,7 @@ header {
         max-width: 560px;
         width: 100%;
         height: 58px;
+        margin: 20px;
     }
     .btn-2 {
         max-width: 228px;
@@ -264,6 +277,7 @@ header {
         background-color: #5474FD;
         border: none;
         transition-duration: 1s;
+        margin: 20px;
     }
 
 
@@ -297,7 +311,7 @@ header {
         }
 
 .image-bar {
-    max-width: 1780px;
+    max-width: 1770px;
     width: 100%;
     height: 400px;
     background-color: #333333;
@@ -613,6 +627,28 @@ footer {
     .icon-link:hover {
         color:#5474FD
     }
+
+    @media screen and (max-width: 1000px) {
+
+        .info-group {
+            max-width: 360px;
+            width: 100%;
+            height: 600px
+        }
+        
+        .image-bar {
+            display: none;
+        }
+
+    }
+
+    @media screen and (max-width: 996px) {
+
+    .display-img-2 {
+        display: none;}
+
+    }
+
     @media screen and (max-width: 800px){
 
         .nav-bar {
@@ -625,8 +661,7 @@ footer {
         .sec-3 {
             display: flex;
             justify-content: center;
-            align-items: center;
-            /*height: 600px;*/}
+            align-items: center;}
 
         .sec-4 {
             display: flex;
