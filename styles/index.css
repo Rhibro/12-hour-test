@@ -13,20 +13,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: auto;
-}
-
-button:hover {
-  background-color: #FFFFFF;
-  color: #5474FD;
+  margin: 0.8rem;
 }
 
 header {
   background-image: url(../images/image-1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1770px;
   width: 100%;
-  height: 737px;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +59,7 @@ h1 {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 5vw;
+  font-size: 48px;
   line-height: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,6 +170,11 @@ input {
           transition-duration: 1s;
 }
 
+button:hover {
+  background-color: #FFFFFF;
+  color: #5474FD;
+}
+
 .scroll-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,9 +225,6 @@ input {
 }
 
 .nav-bar {
-  /*max-width: 1770px;
-  width: 100%;
-  height: 80px;*/
   width: 100%;
   background-color: #5474FD;
   display: -webkit-box;
@@ -251,6 +248,7 @@ h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
+  margin: 1rem;
   line-height: 26px;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -324,9 +322,8 @@ h3 {
   background-image: url(../images/image-2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1770px;
   width: 100%;
-  height: 700px;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -639,26 +636,22 @@ h4 {
 }
 
 .image-bar {
-  width: 100vw;
+  width: 100%;
   height: 40vh;
-  background-color: #333333;
 }
 
 .sec-3 {
-  max-width: 1770px;
   width: 100%;
-  height: 700px;
+  height: 70vh;
   background-image: url(../images/image-5.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: -ms-grid;
   display: grid;
-  padding: 10px;
-  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  -ms-grid-columns: (1fr)[6];
   grid-template-columns: repeat(6, 1fr);
-  -ms-grid-rows: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  -ms-grid-rows: (1fr)[5];
   grid-template-rows: repeat(5, 1fr);
-  grid-gap: 10px;
 }
 
 .sec-3 > *:nth-child(1) {
@@ -668,147 +661,147 @@ h4 {
 
 .sec-3 > *:nth-child(2) {
   -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
 }
 
 .sec-3 > *:nth-child(3) {
   -ms-grid-row: 1;
-  -ms-grid-column: 5;
+  -ms-grid-column: 3;
 }
 
 .sec-3 > *:nth-child(4) {
   -ms-grid-row: 1;
-  -ms-grid-column: 7;
+  -ms-grid-column: 4;
 }
 
 .sec-3 > *:nth-child(5) {
   -ms-grid-row: 1;
-  -ms-grid-column: 9;
+  -ms-grid-column: 5;
 }
 
 .sec-3 > *:nth-child(6) {
   -ms-grid-row: 1;
-  -ms-grid-column: 11;
+  -ms-grid-column: 6;
 }
 
 .sec-3 > *:nth-child(7) {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
 }
 
 .sec-3 > *:nth-child(8) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
 }
 
 .sec-3 > *:nth-child(9) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
 }
 
 .sec-3 > *:nth-child(10) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 7;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
 }
 
 .sec-3 > *:nth-child(11) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 9;
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
 }
 
 .sec-3 > *:nth-child(12) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 11;
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
 }
 
 .sec-3 > *:nth-child(13) {
-  -ms-grid-row: 5;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
 
 .sec-3 > *:nth-child(14) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
 }
 
 .sec-3 > *:nth-child(15) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 5;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
 }
 
 .sec-3 > *:nth-child(16) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 7;
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
 }
 
 .sec-3 > *:nth-child(17) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 9;
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
 }
 
 .sec-3 > *:nth-child(18) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 11;
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
 }
 
 .sec-3 > *:nth-child(19) {
-  -ms-grid-row: 7;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
 }
 
 .sec-3 > *:nth-child(20) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 3;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
 }
 
 .sec-3 > *:nth-child(21) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 5;
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
 }
 
 .sec-3 > *:nth-child(22) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 7;
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
 }
 
 .sec-3 > *:nth-child(23) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 9;
+  -ms-grid-row: 4;
+  -ms-grid-column: 5;
 }
 
 .sec-3 > *:nth-child(24) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 11;
+  -ms-grid-row: 4;
+  -ms-grid-column: 6;
 }
 
 .sec-3 > *:nth-child(25) {
-  -ms-grid-row: 9;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
 }
 
 .sec-3 > *:nth-child(26) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 3;
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
 }
 
 .sec-3 > *:nth-child(27) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 5;
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
 }
 
 .sec-3 > *:nth-child(28) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 7;
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
 }
 
 .sec-3 > *:nth-child(29) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 9;
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
 }
 
 .sec-3 > *:nth-child(30) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 11;
+  -ms-grid-row: 5;
+  -ms-grid-column: 6;
 }
 
 .box-1 {
@@ -917,20 +910,17 @@ h4 {
 }
 
 .sec-4 {
-  max-width: 1770px;
   width: 100%;
-  height: 700px;
+  height: 70vh;
   background-image: url(../images/image-6.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: -ms-grid;
   display: grid;
-  padding: 10px;
-  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  -ms-grid-columns: (1fr)[6];
   grid-template-columns: repeat(6, 1fr);
-  -ms-grid-rows: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  -ms-grid-rows: (1fr)[5];
   grid-template-rows: repeat(5, 1fr);
-  grid-gap: 10px;
 }
 
 .sec-4 > *:nth-child(1) {
@@ -940,147 +930,147 @@ h4 {
 
 .sec-4 > *:nth-child(2) {
   -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
 }
 
 .sec-4 > *:nth-child(3) {
   -ms-grid-row: 1;
-  -ms-grid-column: 5;
+  -ms-grid-column: 3;
 }
 
 .sec-4 > *:nth-child(4) {
   -ms-grid-row: 1;
-  -ms-grid-column: 7;
+  -ms-grid-column: 4;
 }
 
 .sec-4 > *:nth-child(5) {
   -ms-grid-row: 1;
-  -ms-grid-column: 9;
+  -ms-grid-column: 5;
 }
 
 .sec-4 > *:nth-child(6) {
   -ms-grid-row: 1;
-  -ms-grid-column: 11;
+  -ms-grid-column: 6;
 }
 
 .sec-4 > *:nth-child(7) {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
 }
 
 .sec-4 > *:nth-child(8) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
 }
 
 .sec-4 > *:nth-child(9) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
 }
 
 .sec-4 > *:nth-child(10) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 7;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
 }
 
 .sec-4 > *:nth-child(11) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 9;
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
 }
 
 .sec-4 > *:nth-child(12) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 11;
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
 }
 
 .sec-4 > *:nth-child(13) {
-  -ms-grid-row: 5;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
 
 .sec-4 > *:nth-child(14) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
 }
 
 .sec-4 > *:nth-child(15) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 5;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
 }
 
 .sec-4 > *:nth-child(16) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 7;
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
 }
 
 .sec-4 > *:nth-child(17) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 9;
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
 }
 
 .sec-4 > *:nth-child(18) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 11;
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
 }
 
 .sec-4 > *:nth-child(19) {
-  -ms-grid-row: 7;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
 }
 
 .sec-4 > *:nth-child(20) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 3;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
 }
 
 .sec-4 > *:nth-child(21) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 5;
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
 }
 
 .sec-4 > *:nth-child(22) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 7;
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
 }
 
 .sec-4 > *:nth-child(23) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 9;
+  -ms-grid-row: 4;
+  -ms-grid-column: 5;
 }
 
 .sec-4 > *:nth-child(24) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 11;
+  -ms-grid-row: 4;
+  -ms-grid-column: 6;
 }
 
 .sec-4 > *:nth-child(25) {
-  -ms-grid-row: 9;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
 }
 
 .sec-4 > *:nth-child(26) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 3;
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
 }
 
 .sec-4 > *:nth-child(27) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 5;
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
 }
 
 .sec-4 > *:nth-child(28) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 7;
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
 }
 
 .sec-4 > *:nth-child(29) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 9;
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
 }
 
 .sec-4 > *:nth-child(30) {
-  -ms-grid-row: 9;
-  -ms-grid-column: 11;
+  -ms-grid-row: 5;
+  -ms-grid-column: 6;
 }
 
 .box-2 {
@@ -1189,9 +1179,8 @@ h4 {
 }
 
 .sec-5 {
-  max-width: 1770px;
   width: 100%;
-  height: 730px;
+  height: 70vh;
   background-image: url(../images/image-7.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1216,27 +1205,31 @@ h5 {
   font-weight: 400;
   font-size: 36px;
   line-height: 26px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
   color: #FFFFFF;
 }
 
 .box-3 {
-  max-width: 1113px;
-  width: 100%;
-  height: 287px;
-  background-color: #333333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-item-align: row;
+      -ms-grid-row-align: row;
+      align-self: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .text-box {
+  width: 100%;
+  max-width: 668px;
+  height: 287px;
+  background-color: #333333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1546,10 +1539,6 @@ footer {
   }
 }
 @media screen and (max-width: 500px) {
-  h3 {
-    display: none;
-  }
-
   .p-2 {
     max-width: 450px;
     width: 100%;
@@ -1621,10 +1610,6 @@ footer {
 
   .search {
     font-size: 0px;
-  }
-
-  h3 {
-    display: none;
   }
 
   .menu {
