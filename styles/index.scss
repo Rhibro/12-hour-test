@@ -82,7 +82,13 @@ header {
         background-color: white;
         border: 1px solid white;
         transition-duration: 1s;
+        flex-wrap: wrap;
     }
+
+    .search-small {
+        display: none;
+    }
+
     .search {
         max-width: 400px;
         width: 100%;
@@ -832,6 +838,9 @@ footer {
 
     @media screen and (max-width: 500px){
 
+        .search {
+            font-size: 10px;
+        }
     
         .p-2 {
             max-width: 450px;
@@ -865,6 +874,11 @@ footer {
 
     @media screen and (max-width: 450px) {
 
+        .search {
+            font-size: 9px;
+            letter-spacing: .8px;
+        }
+
         .p-11 {
             max-width: 300px;
         }
@@ -882,8 +896,8 @@ footer {
         }
 
         .search {
-            font-size: 10px;
-            
+            font-size: 7px;
+            letter-spacing: .5px;
         }
 
         .image-bar {
@@ -939,6 +953,20 @@ footer {
 
     @media screen and (max-width: 350px) {
 
+        .search {
+            font-size: 7px;
+            letter-spacing: .1px;
+            line-height: 8px;
+        }
+       
+        .btn-3 {
+            align-self: center;
+        }
+
+        .btn-4 {
+            align-self: center;
+        }
+
         .p-11 {
             max-width: 250px;
         }
@@ -947,6 +975,12 @@ footer {
 
     @media screen and (max-width: 340px) {
         
+        .search {
+            font-size: 5px;
+            letter-spacing: 0px;
+            line-height: 5px;
+        }
+       
         .sec-3 {
             height: 100vh;
         }
@@ -963,6 +997,32 @@ footer {
             height: 460px;
         }
 
+        .display-img-3 {
+            max-width: 315px;
+            width: 100%;
+            height: 250px;
+        }
+
+    }
+
+    @media screen and (max-width: 337px) {
+
+        
+        .search {
+            display: none;
+        }
+
+        .search-small {
+            display: flex;
+            font-size: 5px;
+            letter-spacing: 0px;
+            line-height: 5px;
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 400;
+            height: 63px;
+        }
+
     }
 
     @media screen and (max-width: 325px) {
@@ -974,14 +1034,6 @@ footer {
     }
 
     @media screen and (max-width: 320px){
-
-        h1 {
-            font-size: 22px;
-        }
-
-        .search {
-            font-size: 0px;
-        }
 
 
         .menu {
@@ -1017,7 +1069,7 @@ footer {
         }
 
         h5 {
-            font-size: 25px;
+            font-size: 29px;
         }
 
         .box-3 {
@@ -1025,6 +1077,12 @@ footer {
             width: 100%;
             min-height: 150px;
             height: 100%;
+        }
+
+        .display-img-3 {
+            max-width: 315px;
+            width: 100%;
+            height: 250px;
         }
 
         .text-box {

@@ -134,6 +134,12 @@ input {
   border: 1px solid white;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.search-small {
+  display: none;
 }
 
 .search {
@@ -1570,6 +1576,10 @@ footer {
   }
 }
 @media screen and (max-width: 500px) {
+  .search {
+    font-size: 10px;
+  }
+
   .p-2 {
     max-width: 450px;
     width: 100%;
@@ -1607,6 +1617,11 @@ footer {
   }
 }
 @media screen and (max-width: 450px) {
+  .search {
+    font-size: 9px;
+    letter-spacing: 0.8px;
+  }
+
   .p-11 {
     max-width: 300px;
   }
@@ -1621,7 +1636,8 @@ footer {
   }
 
   .search {
-    font-size: 10px;
+    font-size: 7px;
+    letter-spacing: 0.5px;
   }
 
   .image-bar {
@@ -1677,11 +1693,35 @@ footer {
   }
 }
 @media screen and (max-width: 350px) {
+  .search {
+    font-size: 7px;
+    letter-spacing: 0.1px;
+    line-height: 8px;
+  }
+
+  .btn-3 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  .btn-4 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
   .p-11 {
     max-width: 250px;
   }
 }
 @media screen and (max-width: 340px) {
+  .search {
+    font-size: 5px;
+    letter-spacing: 0px;
+    line-height: 5px;
+  }
+
   .sec-3 {
     height: 100vh;
   }
@@ -1697,6 +1737,30 @@ footer {
   .box-2 {
     height: 460px;
   }
+
+  .display-img-3 {
+    max-width: 315px;
+    width: 100%;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 337px) {
+  .search {
+    display: none;
+  }
+
+  .search-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 5px;
+    letter-spacing: 0px;
+    line-height: 5px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    height: 63px;
+  }
 }
 @media screen and (max-width: 325px) {
   h4 {
@@ -1704,14 +1768,6 @@ footer {
   }
 }
 @media screen and (max-width: 320px) {
-  h1 {
-    font-size: 22px;
-  }
-
-  .search {
-    font-size: 0px;
-  }
-
   .menu {
     font-size: 12px;
     display: -webkit-box;
@@ -1752,7 +1808,7 @@ footer {
   }
 
   h5 {
-    font-size: 25px;
+    font-size: 29px;
   }
 
   .box-3 {
@@ -1760,6 +1816,12 @@ footer {
     width: 100%;
     min-height: 150px;
     height: 100%;
+  }
+
+  .display-img-3 {
+    max-width: 315px;
+    width: 100%;
+    height: 250px;
   }
 
   .text-box {
